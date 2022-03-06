@@ -1,0 +1,3 @@
+D:\software\editor\CLion\bin\cmake\win\bin\cmake.exe -E rm -f CMakeFiles\colorize.dir/objects.a
+D:\environments\C++\TDM-GCC\bin\ar.exe cr CMakeFiles\colorize.dir/objects.a @CMakeFiles\colorize.dir\objects1.rsp
+D:\environments\C++\TDM-GCC\bin\g++.exe -std=c++17 -O2 -g -Wl,--whole-archive CMakeFiles\colorize.dir/objects.a -Wl,--no-whole-archive -o bin\colorize.exe -Wl,--out-implib,libcolorize.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\colorize.dir\linklibs.rsp

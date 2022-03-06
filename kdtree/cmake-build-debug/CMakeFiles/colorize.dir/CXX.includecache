@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/work/crane/machine_learning/kdtree/src/kdtree.hpp
+list
+-
+cmath
+-
+memory
+-
+vector
+-
+cstring
+-
+assert.h
+-
+iostream
+-
+functional
+-
+
+D:/work/crane/machine_learning/kdtree/src/knn.cpp
+chrono
+-
+unordered_map
+-
+kdtree.hpp
+D:/work/crane/machine_learning/kdtree/src/kdtree.hpp
+pipeline.hpp
+D:/work/crane/machine_learning/kdtree/src/pipeline.hpp
+
+D:/work/crane/machine_learning/kdtree/src/pipeline.hpp
+map
+-
+fstream
+-
+filesystem
+-
+
