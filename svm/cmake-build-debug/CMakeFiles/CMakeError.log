@@ -1,0 +1,54 @@
+Determining if the function sgemm_ exists failed with the following output:
+Change Dir: D:/work/crane/machine_learning/svm/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):D:/environments/C++/TDM-GCC/bin/mingw32-make.exe cmTC_3fea5/fast && D:/environments/C++/TDM-GCC/bin/mingw32-make.exe  -f CMakeFiles\cmTC_3fea5.dir\build.make CMakeFiles/cmTC_3fea5.dir/build
+mingw32-make.exe[1]: Entering directory 'D:/work/crane/machine_learning/svm/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3fea5.dir/CheckFunctionExists.c.obj
+D:\environments\C++\TDM-GCC\bin\gcc.exe   -DCHECK_FUNCTION_EXISTS=sgemm_ -o CMakeFiles\cmTC_3fea5.dir\CheckFunctionExists.c.obj -c D:\software\editor\CLion\bin\cmake\win\share\cmake-3.19\Modules\CheckFunctionExists.c
+Linking C executable cmTC_3fea5.exe
+D:\software\editor\CLion\bin\cmake\win\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_3fea5.dir\link.txt --verbose=1
+D:\software\editor\CLion\bin\cmake\win\bin\cmake.exe -E rm -f CMakeFiles\cmTC_3fea5.dir/objects.a
+D:\environments\C++\TDM-GCC\bin\ar.exe cr CMakeFiles\cmTC_3fea5.dir/objects.a @CMakeFiles\cmTC_3fea5.dir\objects1.rsp
+D:\environments\C++\TDM-GCC\bin\gcc.exe  -DCHECK_FUNCTION_EXISTS=sgemm_ -Wl,--whole-archive CMakeFiles\cmTC_3fea5.dir/objects.a -Wl,--no-whole-archive -o cmTC_3fea5.exe -Wl,--out-implib,libcmTC_3fea5.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_3fea5.dir\linklibs.rsp
+D:/environments/C++/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/bin/ld.exe: CMakeFiles\cmTC_3fea5.dir/objects.a(CheckFunctionExists.c.obj):CheckFunctionExists.c:(.text+0x15): undefined reference to `sgemm_'
+collect2.exe: error: ld returned 1 exit status
+CMakeFiles\cmTC_3fea5.dir\build.make:106: recipe for target 'cmTC_3fea5.exe' failed
+mingw32-make.exe[1]: *** [cmTC_3fea5.exe] Error 1
+mingw32-make.exe[1]: Leaving directory 'D:/work/crane/machine_learning/svm/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:139: recipe for target 'cmTC_3fea5/fast' failed
+mingw32-make.exe: *** [cmTC_3fea5/fast] Error 2
+
+
+
+Determining if the __fbufsize exist failed with the following output:
+Change Dir: D:/work/crane/machine_learning/svm/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):D:/environments/C++/TDM-GCC/bin/mingw32-make.exe cmTC_99e5f/fast && D:/environments/C++/TDM-GCC/bin/mingw32-make.exe  -f CMakeFiles\cmTC_99e5f.dir\build.make CMakeFiles/cmTC_99e5f.dir/build
+mingw32-make.exe[1]: Entering directory 'D:/work/crane/machine_learning/svm/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_99e5f.dir/CheckSymbolExists.c.obj
+D:\environments\C++\TDM-GCC\bin\gcc.exe    -o CMakeFiles\cmTC_99e5f.dir\CheckSymbolExists.c.obj -c D:\work\crane\machine_learning\svm\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c
+D:\work\crane\machine_learning\svm\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c:2:10: fatal error: stdio_ext.h: No such file or directory
+    2 | #include <stdio_ext.h>
+      |          ^~~~~~~~~~~~~
+compilation terminated.
+CMakeFiles\cmTC_99e5f.dir\build.make:83: recipe for target 'CMakeFiles/cmTC_99e5f.dir/CheckSymbolExists.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_99e5f.dir/CheckSymbolExists.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'D:/work/crane/machine_learning/svm/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:139: recipe for target 'cmTC_99e5f/fast' failed
+mingw32-make.exe: *** [cmTC_99e5f/fast] Error 2
+
+
+File D:/work/crane/machine_learning/svm/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdio_ext.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef __fbufsize
+  return ((int*)(&__fbufsize))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}

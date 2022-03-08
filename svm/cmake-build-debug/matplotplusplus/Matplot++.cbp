@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Matplot++"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\matplotplusplus\;CMake Files\matplotplusplus\cmake\;CMake Files\matplotplusplus\cmake\functions\;CMake Files\matplotplusplus\source\;CMake Files\matplotplusplus\source\3rd_party\;CMake Files\matplotplusplus\source\matplot\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\environments\;CMake Files\..\..\..\..\environments\C++\;CMake Files\..\..\..\..\environments\C++\OpenCV\;CMake Files\..\..\..\..\environments\C++\OpenCV\opencv-4.5.2\;CMake Files\..\..\..\..\environments\C++\OpenCV\opencv-4.5.2\build_TDM-GCC\;CMake Files\..\..\..\..\environments\C++\OpenCV\opencv-4.5.2\build_TDM-GCC\install\;CMake Files\..\..\..\..\environments\C++\OpenCV\opencv-4.5.2\build_TDM-GCC\install\x64\;CMake Files\..\..\..\..\environments\C++\OpenCV\opencv-4.5.2\build_TDM-GCC\install\x64\mingw\;CMake Files\..\..\..\..\environments\C++\OpenCV\opencv-4.5.2\build_TDM-GCC\install\x64\mingw\lib\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="D:/work/crane/machine_learning/svm/cmake-build-debug/matplotplusplus"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/environments/C++/TDM-GCC/bin/mingw32-make.exe -f &quot;D:/work/crane/machine_learning/svm/cmake-build-debug/matplotplusplus/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="D:/environments/C++/TDM-GCC/bin/mingw32-make.exe -f &quot;D:/work/crane/machine_learning/svm/cmake-build-debug/matplotplusplus/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/environments/C++/TDM-GCC/bin/mingw32-make.exe -f &quot;D:/work/crane/machine_learning/svm/cmake-build-debug/matplotplusplus/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/environments/C++/TDM-GCC/bin/mingw32-make.exe -f &quot;D:/work/crane/machine_learning/svm/cmake-build-debug/matplotplusplus/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="nodesoup">
+				<Option output="D:/work/crane/machine_learning/svm/cmake-build-debug/matplotplusplus/source/3rd_party/libnodesoup.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/work/crane/machine_learning/svm/cmake-build-debug/matplotplusplus/source/3rd_party"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D_USE_MATH_DEFINES"/>
+					<Add directory="D:/work/crane/machine_learning/svm/matplotplusplus/source/3rd_party/nodesoup/include"/>
+					<Add directory="D:/environments/C++/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++"/>
+					<Add directory="D:/environments/C++/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="D:/environments/C++/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/backward"/>
+					<Add directory="D:/environments/C++/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include"/>
+					<Add directory="D:/environments/C++/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include"/>
+					<Add directory="D:/environments/C++/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include-fixed"/>
+					<Add directory="D:/environments/C++/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/environments/C++/TDM-GCC/bin/mingw32-make.exe -f &quot;D:/work/crane/machine_learning/svm/cmake-build-debug/matplotplusplus/source/3rd_party/Makefile&quot;  VERBOSE=1 nodesoup"/>
+					<CompileFile command="D:/environments/C++/TDM-GCC/bin/mingw32-make.exe -f &quot;D:/work/crane/machine_learning/svm/cmake-build-debug/matplotplusplus/source/3rd_party/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/environments/C++/TDM-GCC/bin/mingw32-make.exe -f &quot;D:/work/crane/machine_learning/svm/cmake-build-debug/matplotplusplus/source/3rd_party/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/environments/C++/TDM-GCC/bin/mingw32-make.exe -f &quot;D:/work/crane/machine_learning/svm/cmake-build-debug/matplotplusplus/source/3rd_party/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="nodesoup/fast">
+				<Option output="D:/work/crane/machine_learning/svm/cmake-build-debug/matplotplusplus/source/3rd_party/libnodesoup.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/work/crane/machine_learning/svm/cmake-build-debug/matplotplusplus/source/3rd_party"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D_USE_MATH_DEFINES"/>
+					<Add directory="D:/work/crane/machine_learning/svm/matplotplusplus/source/3rd_party/nodesoup/include"/>
+					<Add directory="D:/environments/C++/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++"/>
+					<Add directory="D:/environments/C++/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="D:/environments/C++/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/backward"/>
+					<Add directory="D:/environments/C++/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include"/>
+					<Add directory="D:/environments/C++/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include"/>
+					<Add directory="D:/environments/C++/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include-fixed"/>
+					<Add directory="D:/environments/C++/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/environments/C++/TDM-GCC/bin/mingw32-make.exe -f &quot;D:/work/crane/machine_learning/svm/cmake-build-debug/matplotplusplus/source/3rd_party/Makefile&quot;  VERBOSE=1 nodesoup/fast"/>
+					<CompileFile command="D:/environments/C++/TDM-GCC/bin/mingw32-make.exe -f &quot;D:/work/crane/machine_learning/svm/cmake-build-debug/matplotplusplus/source/3rd_party/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/environments/C++/TDM-GCC/bin/mingw32-make.exe -f &quot;D:/work/crane/machine_learning/svm/cmake-build-debug/matplotplusplus/source/3rd_party/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/environments/C++/TDM-GCC/bin/mingw32-make.exe -f &quot;D:/work/crane/machine_learning/svm/cmake-build-debug/matplotplusplus/source/3rd_party/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="matplot">
+				<Option output="D:/work/crane/machine_learning/svm/cmake-build-debug/matplotplusplus/source/matplot/libmatplot.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/work/crane/machine_learning/svm/cmake-build-debug/matplotplusplus/source/matplot"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DNOMINMAX"/>
+					<Add option="-DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP"/>
+					<Add option="-Dcimg_display=2"/>
+					<Add directory="D:/work/crane/machine_learning/svm/matplotplusplus/source"/>
+					<Add directory="D:/work/crane/machine_learning/svm/matplotplusplus/source/3rd_party/cimg"/>
+					<Add directory="D:/work/crane/machine_learning/svm/matplotplusplus/source/3rd_party/nodesoup/include"/>
+					<Add directory="D:/environments/C++/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++"/>
+					<Add directory="D:/environments/C++/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="D:/environments/C++/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/backward"/>
+					<Add directory="D:/environments/C++/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include"/>
+					<Add directory="D:/environments/C++/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include"/>
+					<Add directory="D:/environments/C++/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include-fixed"/>
+					<Add directory="D:/environments/C++/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/environments/C++/TDM-GCC/bin/mingw32-make.exe -f &quot;D:/work/crane/machine_learning/svm/cmake-build-debug/matplotplusplus/source/matplot/Makefile&quot;  VERBOSE=1 matplot"/>
+					<CompileFile command="D:/environments/C++/TDM-GCC/bin/mingw32-make.exe -f &quot;D:/work/crane/machine_learning/svm/cmake-build-debug/matplotplusplus/source/matplot/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/environments/C++/TDM-GCC/bin/mingw32-make.exe -f &quot;D:/work/crane/machine_learning/svm/cmake-build-debug/matplotplusplus/source/matplot/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/environments/C++/TDM-GCC/bin/mingw32-make.exe -f &quot;D:/work/crane/machine_learning/svm/cmake-build-debug/matplotplusplus/source/matplot/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="matplot/fast">
+				<Option output="D:/work/crane/machine_learning/svm/cmake-build-debug/matplotplusplus/source/matplot/libmatplot.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/work/crane/machine_learning/svm/cmake-build-debug/matplotplusplus/source/matplot"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DNOMINMAX"/>
+					<Add option="-DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP"/>
+					<Add option="-Dcimg_display=2"/>
+					<Add directory="D:/work/crane/machine_learning/svm/matplotplusplus/source"/>
+					<Add directory="D:/work/crane/machine_learning/svm/matplotplusplus/source/3rd_party/cimg"/>
+					<Add directory="D:/work/crane/machine_learning/svm/matplotplusplus/source/3rd_party/nodesoup/include"/>
+					<Add directory="D:/environments/C++/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++"/>
+					<Add directory="D:/environments/C++/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="D:/environments/C++/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/backward"/>
+					<Add directory="D:/environments/C++/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include"/>
+					<Add directory="D:/environments/C++/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include"/>
+					<Add directory="D:/environments/C++/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include-fixed"/>
+					<Add directory="D:/environments/C++/TDM-GCC/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/environments/C++/TDM-GCC/bin/mingw32-make.exe -f &quot;D:/work/crane/machine_learning/svm/cmake-build-debug/matplotplusplus/source/matplot/Makefile&quot;  VERBOSE=1 matplot/fast"/>
+					<CompileFile command="D:/environments/C++/TDM-GCC/bin/mingw32-make.exe -f &quot;D:/work/crane/machine_learning/svm/cmake-build-debug/matplotplusplus/source/matplot/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/environments/C++/TDM-GCC/bin/mingw32-make.exe -f &quot;D:/work/crane/machine_learning/svm/cmake-build-debug/matplotplusplus/source/matplot/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/environments/C++/TDM-GCC/bin/mingw32-make.exe -f &quot;D:/work/crane/machine_learning/svm/cmake-build-debug/matplotplusplus/source/matplot/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/source/3rd_party/nodesoup/include/nodesoup.hpp">
+			<Option target="nodesoup"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/source/3rd_party/nodesoup/src/algebra.cpp">
+			<Option target="nodesoup"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/source/3rd_party/nodesoup/src/algebra.hpp">
+			<Option target="nodesoup"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/source/3rd_party/nodesoup/src/fruchterman_reingold.cpp">
+			<Option target="nodesoup"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/source/3rd_party/nodesoup/src/fruchterman_reingold.hpp">
+			<Option target="nodesoup"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/source/3rd_party/nodesoup/src/kamada_kawai.cpp">
+			<Option target="nodesoup"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/source/3rd_party/nodesoup/src/kamada_kawai.hpp">
+			<Option target="nodesoup"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/source/3rd_party/nodesoup/src/layout.cpp">
+			<Option target="nodesoup"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/source/3rd_party/nodesoup/src/layout.hpp">
+			<Option target="nodesoup"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/source/3rd_party/nodesoup/src/nodesoup.cpp">
+			<Option target="nodesoup"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/source/matplot/axes_objects/bars.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/source/matplot/axes_objects/bars.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/source/matplot/axes_objects/box_chart.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/source/matplot/axes_objects/box_chart.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/source/matplot/axes_objects/circles.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/source/matplot/axes_objects/circles.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/source/matplot/axes_objects/contours.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/source/matplot/axes_objects/contours.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/source/matplot/axes_objects/error_bar.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/source/matplot/axes_objects/error_bar.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/source/matplot/axes_objects/filled_area.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/source/matplot/axes_objects/filled_area.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/source/matplot/axes_objects/function_line.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/source/matplot/axes_objects/function_line.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/source/matplot/axes_objects/histogram.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/source/matplot/axes_objects/histogram.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/source/matplot/axes_objects/labels.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/source/matplot/axes_objects/labels.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/source/matplot/axes_objects/line.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/source/matplot/axes_objects/line.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/source/matplot/axes_objects/matrix.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/source/matplot/axes_objects/matrix.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/source/matplot/axes_objects/network.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/source/matplot/axes_objects/network.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/source/matplot/axes_objects/parallel_lines.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/source/matplot/axes_objects/parallel_lines.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/source/matplot/axes_objects/stair.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/source/matplot/axes_objects/stair.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/source/matplot/axes_objects/string_function.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/source/matplot/axes_objects/string_function.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/source/matplot/axes_objects/surface.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/source/matplot/axes_objects/surface.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/source/matplot/axes_objects/vectors.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/source/matplot/axes_objects/vectors.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/source/matplot/backend/backend_interface.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/source/matplot/backend/backend_interface.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/source/matplot/backend/backend_registry.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/source/matplot/backend/backend_registry.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/source/matplot/backend/gnuplot.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/source/matplot/backend/gnuplot.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/source/matplot/core/axes_object.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/source/matplot/core/axes_object.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/source/matplot/core/axes_type.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/source/matplot/core/axes_type.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/source/matplot/core/axis_type.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/source/matplot/core/axis_type.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/source/matplot/core/figure_registry.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/source/matplot/core/figure_registry.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/source/matplot/core/figure_type.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/source/matplot/core/figure_type.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/source/matplot/core/legend.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/source/matplot/core/legend.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/source/matplot/core/line_spec.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/source/matplot/core/line_spec.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/source/matplot/freestanding/axes_functions.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/source/matplot/freestanding/axes_functions.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/source/matplot/freestanding/axes_lim.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/source/matplot/freestanding/histcounts.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/source/matplot/freestanding/histcounts.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/source/matplot/freestanding/plot.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/source/matplot/matplot.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/source/matplot/util/colors.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/source/matplot/util/colors.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/source/matplot/util/common.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/source/matplot/util/common.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/source/matplot/util/concepts.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/source/matplot/util/contourc.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/source/matplot/util/contourc.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/source/matplot/util/geodata.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/source/matplot/util/handle_types.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/source/matplot/util/keywords.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/source/matplot/util/popen.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/source/matplot/util/type_traits.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/source/matplot/util/world_cities.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/source/matplot/util/world_map_10m.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/source/matplot/util/world_map_110m.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/source/matplot/util/world_map_50m.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\matplotplusplus\"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/cmake/FindFFTW.cmake">
+			<Option virtualFolder="CMake Files\matplotplusplus\cmake\"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/cmake/FindOpenCV.cmake">
+			<Option virtualFolder="CMake Files\matplotplusplus\cmake\"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/cmake/functions.cmake">
+			<Option virtualFolder="CMake Files\matplotplusplus\cmake\"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/cmake/functions/link_external_libraries.cmake">
+			<Option virtualFolder="CMake Files\matplotplusplus\cmake\functions\"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/cmake/functions/project_flags.cmake">
+			<Option virtualFolder="CMake Files\matplotplusplus\cmake\functions\"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/cmake/functions/sanitizers.cmake">
+			<Option virtualFolder="CMake Files\matplotplusplus\cmake\functions\"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/cmake/functions/target_options.cmake">
+			<Option virtualFolder="CMake Files\matplotplusplus\cmake\functions\"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/source/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\matplotplusplus\source\"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/source/3rd_party/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\matplotplusplus\source\3rd_party\"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/matplotplusplus/source/matplot/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\matplotplusplus\source\matplot\"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/../../../../environments/C++/OpenCV/opencv-4.5.2/build_TDM-GCC/install/OpenCVConfig-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\environments\C++\OpenCV\opencv-4.5.2\build_TDM-GCC\install\"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/../../../../environments/C++/OpenCV/opencv-4.5.2/build_TDM-GCC/install/OpenCVConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\environments\C++\OpenCV\opencv-4.5.2\build_TDM-GCC\install\"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/../../../../environments/C++/OpenCV/opencv-4.5.2/build_TDM-GCC/install/x64/mingw/lib/OpenCVConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\environments\C++\OpenCV\opencv-4.5.2\build_TDM-GCC\install\x64\mingw\lib\"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/../../../../environments/C++/OpenCV/opencv-4.5.2/build_TDM-GCC/install/x64/mingw/lib/OpenCVModules-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\environments\C++\OpenCV\opencv-4.5.2\build_TDM-GCC\install\x64\mingw\lib\"/>
+		</Unit>
+		<Unit filename="D:/work/crane/machine_learning/svm/../../../../environments/C++/OpenCV/opencv-4.5.2/build_TDM-GCC/install/x64/mingw/lib/OpenCVModules.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\environments\C++\OpenCV\opencv-4.5.2\build_TDM-GCC\install\x64\mingw\lib\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

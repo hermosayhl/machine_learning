@@ -1,0 +1,3 @@
+D:\software\editor\CLion\bin\cmake\win\bin\cmake.exe -E rm -f CMakeFiles\svm.dir/objects.a
+D:\environments\C++\TDM-GCC\bin\ar.exe cr CMakeFiles\svm.dir/objects.a @CMakeFiles\svm.dir\objects1.rsp
+D:\environments\C++\TDM-GCC\bin\g++.exe -std=c++17 -O2 -g -Wl,--whole-archive CMakeFiles\svm.dir/objects.a -Wl,--no-whole-archive -o ..\bin\svm.exe -Wl,--out-implib,libsvm.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\svm.dir\linklibs.rsp
