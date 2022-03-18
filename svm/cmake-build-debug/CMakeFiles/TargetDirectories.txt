@@ -1,3 +1,0 @@
-D:/work/crane/machine_learning/svm/cmake-build-debug/CMakeFiles/edit_cache.dir
-D:/work/crane/machine_learning/svm/cmake-build-debug/CMakeFiles/PROJECT_NAME.dir
-D:/work/crane/machine_learning/svm/cmake-build-debug/CMakeFiles/rebuild_cache.dir
