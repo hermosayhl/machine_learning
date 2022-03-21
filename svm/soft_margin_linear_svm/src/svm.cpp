@@ -23,12 +23,29 @@ using feature_type = std::vector<data_type>;
 constexpr int positive = 1;
 constexpr int negative = -1;
 
+
+inline data_type square(const data_type x) {
+    return x * x;
+}
+
 // xi, xj 做 Linear 核函数运算
 inline data_type linear_kernel(const feature_type& lhs, const feature_type& rhs) {
     const int dimension = lhs.size();
     data_type sum_value = 0;
     for(int i = 0;i < dimension; ++i) sum_value += lhs[i] * rhs[i];
     return sum_value;
+}
+
+
+// 高斯核（径向基）核函数运算
+inline data_type rbf_kernel(const feature_type& lhs, const feature_type& rhs) {
+    const int dimension = lhs.size();
+    // 先求分子二范数
+    data_type l2 = 0;
+    for(int i = 0;i < dimension; ++i)
+        l2 += square(lhs[i] - rhs[i]);
+    data_type sigma = 0.5;
+    return std::exp(- l2 / (2 * sigma * sigma));
 }
 
 // α 是有上下界限的
@@ -107,9 +124,12 @@ public:
         // 根据参数决定核函数
         if(kernel_name == "linear")
             this->kernel_fun = linear_kernel;
+        else if(kernel_name == "rbf")
+            this->kernel_fun = rbf_kernel;
         else assert(false and "暂未实现");
         // 获取样本数据集信息
         const int samples_num = input.size();
+        std::cout << samples_num << " === " << label.size() << std::endl;
         assert(samples_num == label.size());
         const int dimension = input[0].size();
         // 初始化一些参数
@@ -148,9 +168,7 @@ public:
                    (0 < alpha[i] and alpha[i] < C and std::abs(gxi * label[i] - 1) < eps))
                     continue;
                 // 目前 α1 是违反 KKT 条件的
-                // 找 α2(这个随机是简单的)
-                int j = engine(e);
-                while(j == i) j = engine(e);
+                // 找 α2
                 /* 这种方式行不通
                 int j;
                 E_list[i] = gxi - label[i];
@@ -174,6 +192,9 @@ public:
                 const data_type Ei = E_list[i];
                 const data_type Ej = E_list[j] = g(input[j]) - label[j];
                 */
+                // (这个随机是简单的)
+                int j = engine(e);
+                while(j == i) j = engine(e);
                 // 取出这两个 α
                 data_type alpha_1 = alpha[i];
                 data_type alpha_2 = alpha[j];
@@ -218,6 +239,10 @@ public:
                 if(0 < alpha_1_new and alpha_1_new < C) this->bias = b1;
                 else if(0 < alpha_2_new and alpha_2_new < C) this->bias = b2;
                 else this->bias = (b1 + b2) / 2;
+                /* 在这里更新 Ei, Ej
+                E_list[i] = g(input[i]) - label[i];
+                E_list[j] = g(input[j]) - label[j];
+                */
             }
             // 如果有缓冲区, 计算损失
             if(use_buffer and verbose) {
@@ -248,7 +273,12 @@ public:
         }
         std::cout << "数据拟合结束 !\n";
         std::cout << "支持向量  " << this->support_label.size() << "  个\n";
-        if(plot == true and dimension == 2) {
+        for(const auto& it : this->support_input) {
+            for(int i = 0;i < dimension; ++i)
+                std::cout << it[i] << "  ";
+            std::cout << std::endl;
+        }
+        if(plot == true and kernel_name == "linear" and dimension == 2) {
             // 先得到 W =  sum(αi, yi, xi)
             feature_type W(dimension, 0);
             const int support_num = this->support_input.size();
@@ -298,11 +328,21 @@ public:
             plt::scatter(X1, Y1, 4, {{"c", "black"}});
             plt::scatter(X2, Y2, 4, {{"c", "green"}});
             plt::scatter(XSV, YSV, 4, {{"c", "red"}});
-            plt::save("./output/iters_" + std::to_string(max_iters) + ".png", 600);
+            plt::save("./output/kernel_ + " + kernel_name + "_iters_" + std::to_string(max_iters) + ".png", 600);
             plt::show();
         }
     }
 };
+
+
+
+
+/*
+ * 待做的东西
+ * 1. Mnist 的分类, 这就成了多类分类了
+ * 2. 模型保存以及模型加载
+ * 3. LinearBaseSVM 这个的限制条件
+ */
 
 int main() {
     std::setbuf(stdout, 0);
@@ -333,7 +373,7 @@ int main() {
     SVMClassifier classifier;
     // 拟合数据集
     classifier.fit(X, Y,
-        400,
+        1000,
         "linear",
         1.0,
         1e-5,
