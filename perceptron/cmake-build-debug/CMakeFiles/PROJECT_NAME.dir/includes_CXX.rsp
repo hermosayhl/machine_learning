@@ -1,0 +1,1 @@
+-ID:/environments/C++/3rdparty/matplotlib -isystem D:/work/crane/machine_learning/perceptron/include -isystem D:/environments/Miniconda/include -isystem D:/environments/C++/OpenCV/opencv-4.5.2/build_TDM-GCC/install/include -isystem D:/environments/Miniconda/Lib/site-packages/numpy/core/include

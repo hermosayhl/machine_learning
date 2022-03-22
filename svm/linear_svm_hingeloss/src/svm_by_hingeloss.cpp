@@ -106,7 +106,7 @@ public:
         plt::scatter(X1, Y1, 4, {{"c", "red"}});
         plt::scatter(X2, Y2, 4, {{"c", "green"}});
         plt::save("./output/epoch_" + std::to_string(epoch) + ".png", 600);
-        // plt::show();
+        plt::show();
         plt::clf();
         plt::cla();
         plt::close();
@@ -150,9 +150,8 @@ public:
             data_type total_loss = 0;
             for(int i = 0;i < dimension; ++i)
                 total_loss += 0.5 * weight[i] * weight[i];
-            for(int i = 0;i < samples_num; ++i) {
+            for(int i = 0;i < samples_num; ++i)
                 total_loss += C * std::max(0.f, 1 - label[i] * this->forward(input[i]));
-            }
             // 这里可以打印一下总的 HingeLoss
             printf("%d/%d===>  [loss  %.4f]\n", epoch, total_epochs, total_loss);
             // 画图
@@ -186,6 +185,12 @@ public:
 
 
 
+/*
+ *
+ *
+ *  1. 还没尝试近似线性可分, 会不会震荡, 可以试试
+ */
+
 int main() {
     std::setbuf(stdout, 0);
 
@@ -213,7 +218,7 @@ int main() {
     reader.close();
     // 声明一个分类器
     HingeLossSVM classifier;
-    classifier.fit(X, Y, 400, 1.0, 1e-3, 20);
+    classifier.fit(X, Y, 400, 1.0, 1e-3, 0);
     classifier.score(X, Y);
     return 0;
 }
