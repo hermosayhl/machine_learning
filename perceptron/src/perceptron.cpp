@@ -61,7 +61,7 @@ public:
         const int samples_num = label.size();
         for(int i = 0;i < samples_num; ++i)
             correct += prediction[i] == label[i];
-        printf("%d/%d====> [accuracy  %.3f]", correct, samples_num, correct * 1.0 / samples_num);
+        printf("%d/%d====> [accuracy  %.3f]\n", correct, samples_num, correct * 1.0 / samples_num);
     }
 
     void backward(const feature_type& xi, const int yi, const data_type learning_rate) {
@@ -102,6 +102,7 @@ public:
                     ++error_num;
                 }
             }
+            std::cout << "error_num  " << error_num << std::endl;
             // 如果没有误分类样本, 停止
             if(error_num == 0) break;
         }
@@ -194,7 +195,7 @@ public:
                 for(int j = 0;j < samples_num; ++j)
                     sum_value += alpha[j] * label[j] * Gram[i][j];
                 // 如果存在错误样本
-                if(label[i] * sum_value <= 0) {  // 这个等于号好坑啊, 不然直接退出了
+                if(label[i] * sum_value <= 0) {  // 这个等于号好坑啊, 因为一开始的 α 和 b 都是 0, 如果是 < 0 就直接退出了
                     alpha[i] = alpha[i] + learning_rate;
                     bias = bias + learning_rate * label[i];
                     ++error_num;
@@ -234,7 +235,7 @@ public:
         const int samples_num = label.size();
         for(int i = 0;i < samples_num; ++i)
             correct += prediction[i] == label[i];
-        printf("%d/%d====> [accuracy  %.3f]", correct, samples_num, correct * 1.0 / samples_num);
+        printf("%d/%d====> [accuracy  %.3f]\n", correct, samples_num, correct * 1.0 / samples_num);
     }
 
     void plot_classifier(
@@ -292,7 +293,10 @@ public:
 };
 
 
-
+/*
+ * 1. 可以写一下对偶感知机的核函数的例子, 真的可以
+ * 2. 甚至我还可以写一个带有 C 惩罚的感知机, 允许近似线性可分
+ */
 
 
 int main() {
