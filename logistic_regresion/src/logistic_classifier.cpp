@@ -69,7 +69,7 @@ public:
         int confusion_matrix[2][2] = {0};
         const int samples_num = label.size();
         for(int i = 0;i < samples_num; ++i)
-            ++confusion_matrix[label[i]][prediction[i].first], std::cout << label[i] << std::endl;
+            ++confusion_matrix[label[i]][prediction[i].first];
         // 打印混淆矩阵
         std::cout << "混淆矩阵如下(行 label, 列 prediction, 0 negative, 1 positive) : \n";
         for(int i = 0;i < 2; ++i) {
@@ -286,7 +286,6 @@ std::pair<std::vector<feature_type>, std::vector<int> > read_from_txt(const char
         one[0] = a;
         one[1] = b;
         X.emplace_back(one);
-        std::cout << c << std::endl;
         Y[i] = c;
     }
     // 关闭文件资源
