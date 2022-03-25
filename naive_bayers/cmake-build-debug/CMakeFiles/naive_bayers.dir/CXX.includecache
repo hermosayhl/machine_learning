@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/work/crane/machine_learning/naive_bayers/src/naive_bayers.cpp
+list
+-
+cmath
+-
+cfloat
+-
+vector
+-
+string
+-
+iostream
+-
+pipeline.hpp
+D:/work/crane/machine_learning/naive_bayers/src/pipeline.hpp
+
+D:/work/crane/machine_learning/naive_bayers/src/pipeline.hpp
+assert.h
+-
+cstring
+-
+unordered_map
+-
+fstream
+-
+filesystem
+-
+

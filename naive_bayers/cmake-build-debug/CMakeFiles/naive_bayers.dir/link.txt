@@ -1,0 +1,3 @@
+D:\software\editor\CLion\bin\cmake\win\bin\cmake.exe -E rm -f CMakeFiles\naive_bayers.dir/objects.a
+D:\environments\C++\TDM-GCC\bin\ar.exe cr CMakeFiles\naive_bayers.dir/objects.a @CMakeFiles\naive_bayers.dir\objects1.rsp
+D:\environments\C++\TDM-GCC\bin\g++.exe -std=c++17 -g -Wl,--whole-archive CMakeFiles\naive_bayers.dir/objects.a -Wl,--no-whole-archive -o bin\naive_bayers.exe -Wl,--out-implib,libnaive_bayers.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\naive_bayers.dir\linklibs.rsp
