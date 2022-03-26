@@ -26,6 +26,7 @@ find_package(Python3 COMPONENTS Interpreter Development NumPy REQUIRED)
 add_executable(
     PROJECT_NAME
     src/perceptron.cpp
+#        src/perceptron_kernel.cpp
 )
 
 # 加入 python 的动态库路径

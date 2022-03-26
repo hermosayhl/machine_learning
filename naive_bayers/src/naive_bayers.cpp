@@ -110,13 +110,26 @@ public:
             correct += prediction[i] == label[i];
         printf("%d/%d====> [accuracy  %.3f]\n", correct, samples_num, correct * 1.0 / samples_num);
         // 这里可以写个混淆矩阵
+        // 计算混淆矩阵
+        std::vector<std::vector<int> > confusion_matrix(K, std::vector<int>(K, 0));
+        for(int i = 0;i < samples_num; ++i)
+            ++confusion_matrix[label[i]][prediction[i]];
+        // 打印混淆矩阵
+        std::cout << "混淆矩阵如下(行 label, 列 prediction) : \n";
+        for(int i = 0;i < K; ++i) {
+            std::cout << "\t";
+            for(int j = 0;j < K; ++j)
+                std::cout << confusion_matrix[i][j] << "\t";
+            std::cout << std::endl;
+        }
     }
 };
 
 
 /*
- * 1. 处理连续值 ?
- * 2. 极大似然估计和贝叶斯估计 ?
+ * 1. 处理连续值 ? p(x_j = 0, 1 | Y) 符合某个均值为 u, 方差 σ 的高斯分布；第二种做法是把连续值按照区间划分成多个离散值, 然后分类, 有点麻烦
+ * 2. 极大似然估计和贝叶斯估计 ? 拉普拉斯平滑, 其实是添加了拉普拉斯分布的贝叶斯估计, 加入了一个先验概率
+ * 3. 我目前写的 bayers 是专为 mnist 设计写的, 如果写成可以处理所有离散数据的 bayers 就会慢得多, 以后复习的时候有时间再写吧
  */
 
 
