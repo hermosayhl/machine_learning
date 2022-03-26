@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/naive_bayers.dir/src/naive_bayers.cpp.obj"
+  "CMakeFiles/naive_bayers.dir/src/naive_bayers_continuous.cpp.obj"
   "bin/naive_bayers.exe"
   "bin/naive_bayers.exe.manifest"
   "bin/naive_bayers.pdb"

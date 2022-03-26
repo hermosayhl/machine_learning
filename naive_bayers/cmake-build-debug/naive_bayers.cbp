@@ -86,7 +86,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="D:/work/crane/machine_learning/naive_bayers/src/naive_bayers.cpp">
+		<Unit filename="D:/work/crane/machine_learning/naive_bayers/src/naive_bayers_continuous.cpp">
 			<Option target="naive_bayers"/>
 		</Unit>
 		<Unit filename="D:/work/crane/machine_learning/naive_bayers/CMakeLists.txt">

@@ -10,7 +10,6 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/bin)
 
 # 设置 Python 的路径, 这是必须的, 最好在 anaconda 的 base 环境中; 不然会出现 encoding 的运行错误
 set(ENV{PYTHONHOME} "D:/environments/Miniconda")
-set(ENV{PYTHONPATH} "D:/environments/Miniconda")
 
 # include 我自己的目录
 include_directories(SYSTEM ${CMAKE_CURRENT_SOURCE_DIR}/include)

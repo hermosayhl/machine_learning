@@ -75,28 +75,28 @@ include CMakeFiles/naive_bayers.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/naive_bayers.dir/flags.make
 
-CMakeFiles/naive_bayers.dir/src/naive_bayers.cpp.obj: CMakeFiles/naive_bayers.dir/flags.make
-CMakeFiles/naive_bayers.dir/src/naive_bayers.cpp.obj: CMakeFiles/naive_bayers.dir/includes_CXX.rsp
-CMakeFiles/naive_bayers.dir/src/naive_bayers.cpp.obj: ../src/naive_bayers.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\work\crane\machine_learning\naive_bayers\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/naive_bayers.dir/src/naive_bayers.cpp.obj"
-	D:\environments\C++\TDM-GCC\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\naive_bayers.dir\src\naive_bayers.cpp.obj -c D:\work\crane\machine_learning\naive_bayers\src\naive_bayers.cpp
+CMakeFiles/naive_bayers.dir/src/naive_bayers_continuous.cpp.obj: CMakeFiles/naive_bayers.dir/flags.make
+CMakeFiles/naive_bayers.dir/src/naive_bayers_continuous.cpp.obj: CMakeFiles/naive_bayers.dir/includes_CXX.rsp
+CMakeFiles/naive_bayers.dir/src/naive_bayers_continuous.cpp.obj: ../src/naive_bayers_continuous.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\work\crane\machine_learning\naive_bayers\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/naive_bayers.dir/src/naive_bayers_continuous.cpp.obj"
+	D:\environments\C++\TDM-GCC\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\naive_bayers.dir\src\naive_bayers_continuous.cpp.obj -c D:\work\crane\machine_learning\naive_bayers\src\naive_bayers_continuous.cpp
 
-CMakeFiles/naive_bayers.dir/src/naive_bayers.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/naive_bayers.dir/src/naive_bayers.cpp.i"
-	D:\environments\C++\TDM-GCC\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\work\crane\machine_learning\naive_bayers\src\naive_bayers.cpp > CMakeFiles\naive_bayers.dir\src\naive_bayers.cpp.i
+CMakeFiles/naive_bayers.dir/src/naive_bayers_continuous.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/naive_bayers.dir/src/naive_bayers_continuous.cpp.i"
+	D:\environments\C++\TDM-GCC\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\work\crane\machine_learning\naive_bayers\src\naive_bayers_continuous.cpp > CMakeFiles\naive_bayers.dir\src\naive_bayers_continuous.cpp.i
 
-CMakeFiles/naive_bayers.dir/src/naive_bayers.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/naive_bayers.dir/src/naive_bayers.cpp.s"
-	D:\environments\C++\TDM-GCC\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\work\crane\machine_learning\naive_bayers\src\naive_bayers.cpp -o CMakeFiles\naive_bayers.dir\src\naive_bayers.cpp.s
+CMakeFiles/naive_bayers.dir/src/naive_bayers_continuous.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/naive_bayers.dir/src/naive_bayers_continuous.cpp.s"
+	D:\environments\C++\TDM-GCC\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\work\crane\machine_learning\naive_bayers\src\naive_bayers_continuous.cpp -o CMakeFiles\naive_bayers.dir\src\naive_bayers_continuous.cpp.s
 
 # Object files for target naive_bayers
 naive_bayers_OBJECTS = \
-"CMakeFiles/naive_bayers.dir/src/naive_bayers.cpp.obj"
+"CMakeFiles/naive_bayers.dir/src/naive_bayers_continuous.cpp.obj"
 
 # External object files for target naive_bayers
 naive_bayers_EXTERNAL_OBJECTS =
 
-bin/naive_bayers.exe: CMakeFiles/naive_bayers.dir/src/naive_bayers.cpp.obj
+bin/naive_bayers.exe: CMakeFiles/naive_bayers.dir/src/naive_bayers_continuous.cpp.obj
 bin/naive_bayers.exe: CMakeFiles/naive_bayers.dir/build.make
 bin/naive_bayers.exe: D:/environments/C++/OpenCV/opencv-4.5.2/build_TDM-GCC/install/x64/mingw/lib/libopencv_highgui452.dll.a
 bin/naive_bayers.exe: D:/environments/C++/OpenCV/opencv-4.5.2/build_TDM-GCC/install/x64/mingw/lib/libopencv_videoio452.dll.a

@@ -6,31 +6,27 @@
 
 #IncludeRegexTransform: 
 
-D:/work/crane/machine_learning/naive_bayers/src/naive_bayers.cpp
+D:/work/crane/machine_learning/naive_bayers/src/naive_bayers_continuous.cpp
+assert.h
+-
 list
 -
 cmath
--
-cfloat
 -
 vector
 -
 string
 -
-iostream
--
-pipeline.hpp
-D:/work/crane/machine_learning/naive_bayers/src/pipeline.hpp
-
-D:/work/crane/machine_learning/naive_bayers/src/pipeline.hpp
-assert.h
+random
 -
 cstring
 -
-unordered_map
--
 fstream
 -
-filesystem
+iostream
+-
+algorithm
+-
+unordered_map
 -
 

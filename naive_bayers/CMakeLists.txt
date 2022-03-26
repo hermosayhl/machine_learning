@@ -14,7 +14,11 @@ include_directories(SYSTEM ${CMAKE_CURRENT_SOURCE_DIR}/include)
 
 # 添加可执行文件
 add_executable(naive_bayers
-        src/naive_bayers.cpp)
+
+#        src/naive_bayers.cpp
+
+        src/naive_bayers_continuous.cpp
+)
 
 set(OpenCV_DIR "D:/environments/C++/OpenCV/opencv-4.5.2/build_TDM-GCC/install/")
 # 寻找 opencv 的库

@@ -141,32 +141,32 @@ naive_bayers/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\naive_bayers.dir\build.make CMakeFiles/naive_bayers.dir/build
 .PHONY : naive_bayers/fast
 
-src/naive_bayers.obj: src/naive_bayers.cpp.obj
+src/naive_bayers_continuous.obj: src/naive_bayers_continuous.cpp.obj
 
-.PHONY : src/naive_bayers.obj
+.PHONY : src/naive_bayers_continuous.obj
 
 # target to build an object file
-src/naive_bayers.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\naive_bayers.dir\build.make CMakeFiles/naive_bayers.dir/src/naive_bayers.cpp.obj
-.PHONY : src/naive_bayers.cpp.obj
+src/naive_bayers_continuous.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\naive_bayers.dir\build.make CMakeFiles/naive_bayers.dir/src/naive_bayers_continuous.cpp.obj
+.PHONY : src/naive_bayers_continuous.cpp.obj
 
-src/naive_bayers.i: src/naive_bayers.cpp.i
+src/naive_bayers_continuous.i: src/naive_bayers_continuous.cpp.i
 
-.PHONY : src/naive_bayers.i
+.PHONY : src/naive_bayers_continuous.i
 
 # target to preprocess a source file
-src/naive_bayers.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\naive_bayers.dir\build.make CMakeFiles/naive_bayers.dir/src/naive_bayers.cpp.i
-.PHONY : src/naive_bayers.cpp.i
+src/naive_bayers_continuous.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\naive_bayers.dir\build.make CMakeFiles/naive_bayers.dir/src/naive_bayers_continuous.cpp.i
+.PHONY : src/naive_bayers_continuous.cpp.i
 
-src/naive_bayers.s: src/naive_bayers.cpp.s
+src/naive_bayers_continuous.s: src/naive_bayers_continuous.cpp.s
 
-.PHONY : src/naive_bayers.s
+.PHONY : src/naive_bayers_continuous.s
 
 # target to generate assembly for a file
-src/naive_bayers.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\naive_bayers.dir\build.make CMakeFiles/naive_bayers.dir/src/naive_bayers.cpp.s
-.PHONY : src/naive_bayers.cpp.s
+src/naive_bayers_continuous.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\naive_bayers.dir\build.make CMakeFiles/naive_bayers.dir/src/naive_bayers_continuous.cpp.s
+.PHONY : src/naive_bayers_continuous.cpp.s
 
 # Help Target
 help:
@@ -177,9 +177,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... naive_bayers
-	@echo ... src/naive_bayers.obj
-	@echo ... src/naive_bayers.i
-	@echo ... src/naive_bayers.s
+	@echo ... src/naive_bayers_continuous.obj
+	@echo ... src/naive_bayers_continuous.i
+	@echo ... src/naive_bayers_continuous.s
 .PHONY : help
 
 
